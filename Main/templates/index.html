@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script type="text/javascript" src="{{url_for('static', filename = 'script/script.js')}}"></script> -->
+    <link href="{{ url_for('static' ,filename='css\styles.css') }}" rel="stylesheet" >
+               "{{ url_for('static' ,filename='css\main  .css') }}"
+    
+    <title>COVID-19 X-ray Analyzer</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>COVID-19 X-ray Analyzer</h1>
+    </header>
+    <main>
+        <section id="upload-section">
+            <h2>Upload X-ray Image</h2>
+            <input type="file" id="imageInput" accept=".jpg, .jpeg, .png" />
+            <button onclick="predict()">Predict</button>
+        </section>
+        <section id="result-section">
+            <h2>Result</h2>
+            <div id="predictionResult"></div>
+        </section>
+    </main>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>

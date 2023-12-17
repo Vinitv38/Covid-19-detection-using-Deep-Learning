@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Home</title>
+    
+</head>
+<body>
+    <header class="header">
+        <h1>COVID-19 X-Ray Analyzer</h1>
+    </header>
+    <main class="main">
+        <h3 class="h3">History</h3>
+        <p class="info">
+            The outbreak of COVID-19, arising in December 2019 in Wuhan, China, initially manifested as a cluster of pneumonia cases with an unknown cause. The novel coronavirus, later identified as SARS-CoV-2, swiftly evolved into a global pandemic, prompting the World Health Organization (WHO) to declare it as such on March 11, 2020. Its rapid transmission through respiratory droplets and close contact raised significant concerns regarding public health and safety. The virus posed substantial hazards due to its high infectivity rate and the potential for causing severe respiratory illness, impacting populations worldwide. The urgency to address this health crisis and mitigate its devastating effects prompted a search for innovative solutions to manage and combat the spread of the virus.
+
+        </p>
+        <p class="info">Amid the escalating pandemic, the pressing need for effective and prompt identification of COVID-19 cases became evident. Traditional diagnostic methods, particularly polymerase chain reaction (PCR) tests, while accurate, presented challenges due to their time-consuming nature, taking several hours or longer to yield results. Delays in obtaining test results hindered timely patient triage and treatment, exacerbating the strain on healthcare systems already grappling with a surge in cases. In response to these challenges, the integration of medical imaging, specifically chest X-rays, alongside artificial intelligence emerged as a pivotal approach to expedite the assessment and management of COVID-19-infected individuals.</p>
+        <p class="info">In this context, the utilization of deep-learning techniques within artificial intelligence gained prominence for their potential in rapidly analyzing chest X-ray images to detect COVID-19-related lung abnormalities. These advanced AI algorithms offered high-performance classification capabilities, swiftly identifying pathological findings indicative of the virus in chest X-rays. Leveraging AI-based analysis of medical images allowed for a more efficient and accurate triage process, enabling healthcare professionals to swiftly differentiate between patients with normal chest X-ray results and those displaying COVID-19-related lung pathologies. This innovative approach significantly aided in alleviating the burden on emergency departments and urgent care centers, facilitating quicker decision-making regarding hospital admission for patients requiring close monitoring and medical intervention. By integrating deep-learning models into the diagnostic pathway, healthcare providers could expedite the identification and management of COVID-19 cases, contributing to more effective containment strategies during the ongoing global health crisis.</p>
+        <div class="container">
+            <p>Welcome to the COVID-19 X-ray Analyzer. Upload an X-ray image to get started.</p>
+            <a class="button" href="{{ url_for('upload') }}">Go to Upload Page</a>
+        </div>
+    </main>
+</body>
+</html>

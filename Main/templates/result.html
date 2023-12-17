@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Result</title>
+
+</head>
+<body>
+    
+    <main>
+        <div class="container">
+            <section id="result-section">
+                <h2>Result</h2>
+                
+                {% if image_path %}
+                <div class="img-preview">
+                    <div id="imagePreview">
+                        <img src="{{ url_for('get_image', filename=image_path) }}" alt="Upload Image">
+                        <h3>{{text}}</h3>
+                    </div>
+                </div>
+                {% else %}
+                    <p>Image not Uploaded.</p>
+                {% endif %}
+            </section>
+            <a class="button" href="{{ url_for('upload') }}">Back to Upload Page</a>
+        </div>
+    </main>
+</body>
+</html>

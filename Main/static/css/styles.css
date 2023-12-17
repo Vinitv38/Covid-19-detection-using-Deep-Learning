@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Josefin+Sans:wght@600&display=swap');
+body{
+    font-family: 'Carter One', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+                                                
+    font-size: 2vw;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    
+    padding-bottom: 100%;
+    
+    
+    color:black;
+    font-size: 20px;
+    text-align: center;
+    padding-top: em;
+    padding-bottom:0em;
+    
+    /* Set full viewport height */
+    background-image: url('covid_image.jpg'); /* Replace 'your-image-url.jpg' with your image URL */
+    background-size: cover; /* Cover the entire container with the image */
+    background-position: center; /* Center the image */
+    position: relative;
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    backdrop-filter: blur(8px);
+}
+
+.header::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit; /* Use the same background image as the container */
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(8px); /* Apply the blur effect */
+}    
+
+h1{
+    text-align: center;
+    color: black;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    
+    padding-bottom: 25%;
+    padding-top:25%;
+    
+}
+
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* button {
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+} */
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#predictionResult {
+    font-weight: bold;
+    color: #27ae60;
+}
+button, .button {
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 35vw;
+    text-decoration: none; 
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:0 20%;
+    margin-top:2vw;
+    margin-bottom:0vw;
+    padding-bottom:0.5vw;
+    /* box-sizing: border_box */
+    /* height: 100vh; /* Adjust as needed  */
+
+}
+.main, .container{
+    background-color: black;
+    color: white;
+    padding: 10%;
+    padding-top: 5%;
+    margin-bottom:0;
+    padding-bottom: 2vw;
+}
+p{
+    padding: 5%;
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+.h3{
+    padding: 5%;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 2em;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    main {
+        max-width: 90%; /* Adjust the width for smaller screens */
+        margin: 10px auto; /* Adjust margins for smaller screens */
+    }
+
+    header {
+        padding: 0.5em; /* Adjust header padding for smaller screens */
+    }
+
+    button {
+        padding: 8px; /* Adjust button padding for smaller screens */
+    }
+}
+
+/* Add more media queries and adjust styles as needed for other screen sizes */
